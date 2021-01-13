@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/build",
+  "command": "/bin/g++-10    -O2 -g -DNDEBUG   -o CMakeFiles/conways-game-of-life.dir/src/main.cpp.o -c /home/martin/Documents/GitHub/SFML-conways-game-of-life/src/main.cpp",
+  "file": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/src/main.cpp"
+}
+]

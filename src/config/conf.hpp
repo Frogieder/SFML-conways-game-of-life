@@ -1,0 +1,1 @@
+#define circle_speed 200 // px/s
