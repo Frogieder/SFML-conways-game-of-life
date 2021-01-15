@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: conways-game-of-life
-# Configuration: RelWithDebInfo
+# Configuration: Debug
 # =============================================================================
 
 #############################################
@@ -267,7 +267,7 @@ build cmake_object_order_depends_target_conways-game-of-life: phony || CMakeFile
 
 build CMakeFiles/conways-game-of-life.dir/src/main.cpp.o: CXX_COMPILER__conways-game-of-life ../src/main.cpp || cmake_object_order_depends_target_conways-game-of-life
   DEP_FILE = CMakeFiles/conways-game-of-life.dir/src/main.cpp.o.d
-  FLAGS = -O2 -g -DNDEBUG
+  FLAGS = -g
   OBJECT_DIR = CMakeFiles/conways-game-of-life.dir
   OBJECT_FILE_DIR = CMakeFiles/conways-game-of-life.dir/src
 
@@ -280,7 +280,7 @@ build CMakeFiles/conways-game-of-life.dir/src/main.cpp.o: CXX_COMPILER__conways-
 # Link the executable conways-game-of-life
 
 build conways-game-of-life: CXX_EXECUTABLE_LINKER__conways-game-of-life CMakeFiles/conways-game-of-life.dir/src/main.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
-  FLAGS = -O2 -g -DNDEBUG
+  FLAGS = -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   OBJECT_DIR = CMakeFiles/conways-game-of-life.dir

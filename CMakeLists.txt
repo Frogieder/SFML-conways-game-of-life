@@ -6,7 +6,7 @@ enable_testing()
 
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 add_executable(conways-game-of-life ./src/main.cpp)
-target_link_libraries(conways-game-of-life sfml-graphics sfml-audio)
+target_link_libraries(conways-game-of-life sfml-graphics sfml-audio sfml-system)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
