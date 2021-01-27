@@ -1,0 +1,5 @@
+add_executable(conways-game-of-life main.cpp game.cpp)
+#add_executable(gameFunctions game.cpp)
+#add_library(gameFunctions_lib STATIC game.cpp)
+#target_link_libraries(conways-game-of-life gameFunctions_lib)
+target_link_libraries(conways-game-of-life sfml-graphics sfml-audio sfml-system)

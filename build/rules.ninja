@@ -39,6 +39,44 @@ rule CXX_EXECUTABLE_LINKER__conways-game-of-life
 
 
 #############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__t_make_grid
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /bin/g++-10  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__t_make_grid
+  command = $PRE_LINK && /bin/g++-10  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__t_neighbours
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /bin/g++-10  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__t_neighbours
+  command = $PRE_LINK && /bin/g++-10  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE

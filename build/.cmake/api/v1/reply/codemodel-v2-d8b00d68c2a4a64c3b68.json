@@ -6,6 +6,11 @@
 			[
 				{
 					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0.0"
@@ -41,8 +46,36 @@
 						24,
 						25,
 						26,
-						27,
+						27
+					]
+				},
+				{
+					"build" : "src",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
 						28
+					]
+				},
+				{
+					"build" : "tests",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						29,
+						30
 					]
 				}
 			],
@@ -52,7 +85,9 @@
 				{
 					"directoryIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					],
 					"name" : "conways-game-of-life",
 					"targetIndexes" : 
@@ -85,7 +120,9 @@
 						25,
 						26,
 						27,
-						28
+						28,
+						29,
+						30
 					]
 				}
 			],
@@ -288,10 +325,24 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 0,
-					"id" : "conways-game-of-life::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-conways-game-of-life-Debug-b301ede588c019cb984e.json",
+					"directoryIndex" : 1,
+					"id" : "conways-game-of-life::@145eef247bfb46b6828c",
+					"jsonFile" : "target-conways-game-of-life-Debug-cbd452819bfc62f875fa.json",
 					"name" : "conways-game-of-life",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "t_make_grid::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-t_make_grid-Debug-dadcd1f529b768034c85.json",
+					"name" : "t_make_grid",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "t_neighbours::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-t_neighbours-Debug-8fa10281382d3c379803.json",
+					"name" : "t_neighbours",
 					"projectIndex" : 0
 				}
 			]

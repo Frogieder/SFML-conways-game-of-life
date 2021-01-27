@@ -1,7 +1,37 @@
 [
 {
   "directory": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/build",
-  "command": "/bin/g++-10    -g   -o CMakeFiles/conways-game-of-life.dir/src/main.cpp.o -c /home/martin/Documents/GitHub/SFML-conways-game-of-life/src/main.cpp",
+  "command": "/bin/g++-10    -g   -o src/CMakeFiles/conways-game-of-life.dir/main.cpp.o -c /home/martin/Documents/GitHub/SFML-conways-game-of-life/src/main.cpp",
   "file": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/src/main.cpp"
+},
+
+{
+  "directory": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/build",
+  "command": "/bin/g++-10    -g   -o src/CMakeFiles/conways-game-of-life.dir/game.cpp.o -c /home/martin/Documents/GitHub/SFML-conways-game-of-life/src/game.cpp",
+  "file": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/src/game.cpp"
+},
+
+{
+  "directory": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/build",
+  "command": "/bin/g++-10    -g   -o tests/CMakeFiles/t_make_grid.dir/test_grid_generator.cpp.o -c /home/martin/Documents/GitHub/SFML-conways-game-of-life/tests/test_grid_generator.cpp",
+  "file": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/tests/test_grid_generator.cpp"
+},
+
+{
+  "directory": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/build",
+  "command": "/bin/g++-10    -g   -o tests/CMakeFiles/t_make_grid.dir/__/src/game.cpp.o -c /home/martin/Documents/GitHub/SFML-conways-game-of-life/src/game.cpp",
+  "file": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/src/game.cpp"
+},
+
+{
+  "directory": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/build",
+  "command": "/bin/g++-10    -g   -o tests/CMakeFiles/t_neighbours.dir/test_neighbour_count.cpp.o -c /home/martin/Documents/GitHub/SFML-conways-game-of-life/tests/test_neighbour_count.cpp",
+  "file": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/tests/test_neighbour_count.cpp"
+},
+
+{
+  "directory": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/build",
+  "command": "/bin/g++-10    -g   -o tests/CMakeFiles/t_neighbours.dir/__/src/game.cpp.o -c /home/martin/Documents/GitHub/SFML-conways-game-of-life/src/game.cpp",
+  "file": "/home/martin/Documents/GitHub/SFML-conways-game-of-life/src/game.cpp"
 }
 ]

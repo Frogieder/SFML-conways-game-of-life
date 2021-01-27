@@ -33,7 +33,7 @@
 
 notes.txt
 build/conways-game-of-life
-
+*.ninja_log
 *.log
 build/Testing/Temporary/LastTest.log
 build/.ninja_log

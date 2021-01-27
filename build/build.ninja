@@ -204,30 +204,6 @@ build ExperimentalStart: phony CMakeFiles/ExperimentalStart
 
 
 #############################################
-# Utility command for package
-
-build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build && /usr/bin/cpack --config ./CPackConfig.cmake
-  DESC = Run CPack packaging tool...
-  pool = console
-  restat = 1
-
-build package: phony CMakeFiles/package.util
-
-
-#############################################
-# Utility command for NightlyBuild
-
-build NightlyBuild: phony CMakeFiles/NightlyBuild
-
-
-#############################################
-# Utility command for ExperimentalBuild
-
-build ExperimentalBuild: phony CMakeFiles/ExperimentalBuild
-
-
-#############################################
 # Utility command for ExperimentalUpdate
 
 build ExperimentalUpdate: phony CMakeFiles/ExperimentalUpdate
@@ -256,38 +232,29 @@ build ContinuousTest: phony CMakeFiles/ContinuousTest
 
 build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
 
-# =============================================================================
-# Object build statements for EXECUTABLE target conways-game-of-life
+
+#############################################
+# Utility command for NightlyBuild
+
+build NightlyBuild: phony CMakeFiles/NightlyBuild
 
 
 #############################################
-# Order-only phony target for conways-game-of-life
+# Utility command for ExperimentalBuild
 
-build cmake_object_order_depends_target_conways-game-of-life: phony || CMakeFiles/conways-game-of-life.dir
-
-build CMakeFiles/conways-game-of-life.dir/src/main.cpp.o: CXX_COMPILER__conways-game-of-life ../src/main.cpp || cmake_object_order_depends_target_conways-game-of-life
-  DEP_FILE = CMakeFiles/conways-game-of-life.dir/src/main.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/conways-game-of-life.dir
-  OBJECT_FILE_DIR = CMakeFiles/conways-game-of-life.dir/src
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target conways-game-of-life
+build ExperimentalBuild: phony CMakeFiles/ExperimentalBuild
 
 
 #############################################
-# Link the executable conways-game-of-life
+# Utility command for package
 
-build conways-game-of-life: CXX_EXECUTABLE_LINKER__conways-game-of-life CMakeFiles/conways-game-of-life.dir/src/main.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
-  FLAGS = -g
-  LINK_FLAGS = -rdynamic
-  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
-  OBJECT_DIR = CMakeFiles/conways-game-of-life.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = conways-game-of-life
-  TARGET_PDB = conways-game-of-life.dbg
+build CMakeFiles/package.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build package: phony CMakeFiles/package.util
 
 
 #############################################
@@ -459,22 +426,6 @@ build CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
 
 
 #############################################
-# Custom command for CMakeFiles/NightlyBuild
-
-build CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build && /usr/bin/ctest -D NightlyBuild
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalBuild
-
-build CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build && /usr/bin/ctest -D ExperimentalBuild
-  pool = console
-
-
-#############################################
 # Custom command for CMakeFiles/ExperimentalUpdate
 
 build CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
@@ -513,8 +464,273 @@ build CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
   COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build && /usr/bin/ctest -D ContinuousSubmit
   pool = console
 
+
+#############################################
+# Custom command for CMakeFiles/NightlyBuild
+
+build CMakeFiles/NightlyBuild: CUSTOM_COMMAND
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build && /usr/bin/ctest -D NightlyBuild
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalBuild
+
+build CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build && /usr/bin/ctest -D ExperimentalBuild
+  pool = console
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/martin/Documents/GitHub/SFML-conways-game-of-life/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build/src && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for test
+
+build src/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build/src && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build src/test: phony src/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for package_source
+
+build src/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/martin/Documents/GitHub/SFML-conways-game-of-life/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build src/package_source: phony src/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build/src && /usr/bin/cmake -S/home/martin/Documents/GitHub/SFML-conways-game-of-life -B/home/martin/Documents/GitHub/SFML-conways-game-of-life/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for package
+
+build src/CMakeFiles/package.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build src/package: phony src/CMakeFiles/package.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target conways-game-of-life
+
+
+#############################################
+# Order-only phony target for conways-game-of-life
+
+build cmake_object_order_depends_target_conways-game-of-life: phony || src/CMakeFiles/conways-game-of-life.dir
+
+build src/CMakeFiles/conways-game-of-life.dir/main.cpp.o: CXX_COMPILER__conways-game-of-life ../src/main.cpp || cmake_object_order_depends_target_conways-game-of-life
+  DEP_FILE = src/CMakeFiles/conways-game-of-life.dir/main.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = src/CMakeFiles/conways-game-of-life.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/conways-game-of-life.dir
+
+build src/CMakeFiles/conways-game-of-life.dir/game.cpp.o: CXX_COMPILER__conways-game-of-life ../src/game.cpp || cmake_object_order_depends_target_conways-game-of-life
+  DEP_FILE = src/CMakeFiles/conways-game-of-life.dir/game.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = src/CMakeFiles/conways-game-of-life.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/conways-game-of-life.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target conways-game-of-life
+
+
+#############################################
+# Link the executable src/conways-game-of-life
+
+build src/conways-game-of-life: CXX_EXECUTABLE_LINKER__conways-game-of-life src/CMakeFiles/conways-game-of-life.dir/main.cpp.o src/CMakeFiles/conways-game-of-life.dir/game.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+  OBJECT_DIR = src/CMakeFiles/conways-game-of-life.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/conways-game-of-life
+  TARGET_PDB = conways-game-of-life.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/martin/Documents/GitHub/SFML-conways-game-of-life/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build/tests && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tests/edit_cache: phony tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for test
+
+build tests/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build/tests && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build tests/test: phony tests/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for package_source
+
+build tests/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/martin/Documents/GitHub/SFML-conways-game-of-life/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build tests/package_source: phony tests/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build/tests && /usr/bin/cmake -S/home/martin/Documents/GitHub/SFML-conways-game-of-life -B/home/martin/Documents/GitHub/SFML-conways-game-of-life/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tests/rebuild_cache: phony tests/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for package
+
+build tests/CMakeFiles/package.util: CUSTOM_COMMAND tests/all
+  COMMAND = cd /home/martin/Documents/GitHub/SFML-conways-game-of-life/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build tests/package: phony tests/CMakeFiles/package.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target t_make_grid
+
+
+#############################################
+# Order-only phony target for t_make_grid
+
+build cmake_object_order_depends_target_t_make_grid: phony || tests/CMakeFiles/t_make_grid.dir
+
+build tests/CMakeFiles/t_make_grid.dir/test_grid_generator.cpp.o: CXX_COMPILER__t_make_grid ../tests/test_grid_generator.cpp || cmake_object_order_depends_target_t_make_grid
+  DEP_FILE = tests/CMakeFiles/t_make_grid.dir/test_grid_generator.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = tests/CMakeFiles/t_make_grid.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/t_make_grid.dir
+
+build tests/CMakeFiles/t_make_grid.dir/__/src/game.cpp.o: CXX_COMPILER__t_make_grid ../src/game.cpp || cmake_object_order_depends_target_t_make_grid
+  DEP_FILE = tests/CMakeFiles/t_make_grid.dir/__/src/game.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = tests/CMakeFiles/t_make_grid.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/t_make_grid.dir/__/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t_make_grid
+
+
+#############################################
+# Link the executable tests/t_make_grid
+
+build tests/t_make_grid: CXX_EXECUTABLE_LINKER__t_make_grid tests/CMakeFiles/t_make_grid.dir/test_grid_generator.cpp.o tests/CMakeFiles/t_make_grid.dir/__/src/game.cpp.o
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = tests/CMakeFiles/t_make_grid.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = tests/t_make_grid
+  TARGET_PDB = t_make_grid.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target t_neighbours
+
+
+#############################################
+# Order-only phony target for t_neighbours
+
+build cmake_object_order_depends_target_t_neighbours: phony || tests/CMakeFiles/t_neighbours.dir
+
+build tests/CMakeFiles/t_neighbours.dir/test_neighbour_count.cpp.o: CXX_COMPILER__t_neighbours ../tests/test_neighbour_count.cpp || cmake_object_order_depends_target_t_neighbours
+  DEP_FILE = tests/CMakeFiles/t_neighbours.dir/test_neighbour_count.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = tests/CMakeFiles/t_neighbours.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/t_neighbours.dir
+
+build tests/CMakeFiles/t_neighbours.dir/__/src/game.cpp.o: CXX_COMPILER__t_neighbours ../src/game.cpp || cmake_object_order_depends_target_t_neighbours
+  DEP_FILE = tests/CMakeFiles/t_neighbours.dir/__/src/game.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = tests/CMakeFiles/t_neighbours.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/t_neighbours.dir/__/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target t_neighbours
+
+
+#############################################
+# Link the executable tests/t_neighbours
+
+build tests/t_neighbours: CXX_EXECUTABLE_LINKER__t_neighbours tests/CMakeFiles/t_neighbours.dir/test_neighbour_count.cpp.o tests/CMakeFiles/t_neighbours.dir/__/src/game.cpp.o
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = tests/CMakeFiles/t_neighbours.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = tests/t_neighbours
+  TARGET_PDB = t_neighbours.dbg
+
 # =============================================================================
 # Target aliases.
+
+build conways-game-of-life: phony src/conways-game-of-life
+
+build t_make_grid: phony tests/t_make_grid
+
+build t_neighbours: phony tests/t_neighbours
 
 # =============================================================================
 # Folder targets.
@@ -524,7 +740,21 @@ build CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
 #############################################
 # Folder: /home/martin/Documents/GitHub/SFML-conways-game-of-life/build
 
-build all: phony conways-game-of-life
+build all: phony src/all tests/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/martin/Documents/GitHub/SFML-conways-game-of-life/build/src
+
+build src/all: phony src/conways-game-of-life
+
+# =============================================================================
+
+#############################################
+# Folder: /home/martin/Documents/GitHub/SFML-conways-game-of-life/build/tests
+
+build tests/all: phony tests/t_make_grid tests/t_neighbours
 
 # =============================================================================
 # Unknown Build Time Dependencies.
@@ -543,14 +773,14 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt ../tests/CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../src/CMakeLists.txt ../tests/CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake /usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/CTest.cmake /usr/share/cmake-3.16/Modules/CTestTargets.cmake /usr/share/cmake-3.16/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
 
 
 #############################################
